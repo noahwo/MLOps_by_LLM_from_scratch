@@ -1,21 +1,20 @@
 [toc]
+
 ## System prompt
 
-```
-You are an expert in Tiny Machine Learning (TinyML), highly skilled in the workflow, tools, techniques, and best practices of TinyML operations. Your expertise extends to hardware, including microcontrollers. You will be asked questions regarding various phases, for example, data engineering, model designing, model evaluation, etc, of TinyMLOps and may need to generate code to execute corresponding tasks, for example, data cleaning, model training code, etc.
-```
+> You are an expert in Tiny Machine Learning (TinyML), highly skilled in the workflow, tools, techniques, and best practices of TinyML operations. Your expertise extends to hardware, including microcontrollers. You will be asked questions regarding various phases, for example, data engineering, model designing, model evaluation, etc, of TinyMLOps and may need to generate code to execute corresponding tasks, for example, data cleaning, model training code, etc.
 
 ## Example - suggestions and code for data engineering
+
 ### Prompt 1
 
-```
-# CONTEXT #
-You are an expert in Tiny Machine Learning (TinyML), highly skilled in the workflow, tools, techniques, and best practices of TinyML operations. Your expertise extends to hardware, including microcontrollers. You will be asked questions regarding various phases, for example, data engineering, model designing, model evaluation, etc, of TinyMLOps and may need to generate code to execute corresponding tasks, for example, data cleaning, model training code, etc. 
-# Objective #
-I want to train a model to detect spam emails. now analyse the dataset I uploaded to give practical suggestions in sequential order to do data engineering based on the inspirations you get from this dataset. 
-# RESPONSE FORMAT #
-Keep the answer short and concise. do not add a title and summary text, question or conclusion in your answer. the output format should be in JSON objects like: {"suggestion_name":"short explanation"}
-```
+> \# CONTEXT #
+> You are an expert in Tiny Machine Learning (TinyML), highly skilled in the workflow, tools, techniques, and best practices of TinyML operations. Your expertise extends to hardware, including microcontrollers. You will be asked questions regarding various phases, for example, data engineering, model designing, model evaluation, etc, of TinyMLOps and may need to generate code to execute corresponding tasks, for example, data cleaning, model training code, etc.
+> \# OBJECTIVE #
+> I want to train a model to detect spam emails. now analyse the dataset I uploaded to give practical suggestions in sequential order to do data engineering based on the inspirations you get from this dataset.
+> \# RESPONSE FORMAT #
+> Keep the answer short and concise. do not add a title and summary text, question or conclusion in your answer. the output format should be in JSON objects like: {"suggestion_name":"short explanation"}
+
 ### Answer 1
 
 ```JSON
@@ -47,6 +46,7 @@ Keep the answer short and concise. do not add a title and summary text, question
 ```
 
 ### answer 2
+
 ```python
 import pandas as pd
 
@@ -83,6 +83,7 @@ data.to_csv(cleaned_file_path, index=False)
 ```
 
 ### answer 3
+
 ```python
 import pandas as pd
 from sklearn.utils import resample
@@ -96,7 +97,7 @@ ham = data[data.Category == 'ham']
 spam = data[data.Category == 'spam']
 
 # Upsample minority class (spam)
-spam_upsampled = resample(spam, 
+spam_upsampled = resample(spam,
                           replace=True,    # sample with replacement
                           n_samples=len(ham),  # match number in majority class
                           random_state=42)  # reproducible results
@@ -125,7 +126,10 @@ upsampled_data.to_csv(balanced_file_path, index=False)
     },
     "task_requirements": "Write me practical code to implement the operation.",
     "dataset_path": "./data/spam_cleaned.csv",
-    "processing_already_applied": ["remove_duplicates","handle_class_imbalance"],
+    "processing_already_applied": [
+      "remove_duplicates",
+      "handle_class_imbalance"
+    ],
     "format": "output only a code block; report any file and directory structure change caused by your output code; replay similarly to the format of JSON to specify dataset path after change"
   }
 }
@@ -193,12 +197,17 @@ Package `nltk`m missing, I manually installed it then.
       "feature_extraction": "Convert text data into numerical data using methods like TF-IDF or word embeddings."
     },
     "task_requirements": "Write me practical code to implement the operation.",
-    "dataset_path":"./data/spam_preprocessed.csv",
-    "processing_already_applied": ["remove_duplicates","handle_class_imbalance"，"text_preprocessing"],
+    "dataset_path": "./data/spam_preprocessed.csv",
+    "processing_already_applied": [
+      "remove_duplicates",
+      "handle_class_imbalance",
+      "text_preprocessing"
+    ],
     "format": "output only a code block; report any file and directory structure change caused by your output code; replay similarly to the format of JSON to specify dataset path after change"
   }
 }
 ```
+
 ### answer 5
 
 ```python
@@ -236,7 +245,7 @@ with open(vectorizer_file_path, 'wb') as f:
 
 ### Issue 2 - error
 
-```json
+```
 {“executed_code”:”import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 import pickle
@@ -310,6 +319,7 @@ with open(features_file_path, 'wb') as f:
 with open(vectorizer_file_path, 'wb') as f:
     pickle.dump(vectorizer, f)
 ```
+
 ```json
 {
   "dataset_path_features": "./data/spam_features.pkl",
@@ -326,11 +336,16 @@ with open(vectorizer_file_path, 'wb') as f:
       "train_test_split": "Split the dataset into training and testing sets to evaluate model performance."
     },
     "task_requirements": "Write me practical code to implement the operation.",
-    "dataset_path":{
-  "dataset_path_features": "./data/spam_features.pkl",
-  "vectorizer_path": "./data/tfidf_vectorizer.pkl"
-},
-    "processing_already_applied": ["remove_duplicates","handle_class_imbalance"，"text_preprocessing","feature_extraction"],
+    "dataset_path": {
+      "dataset_path_features": "./data/spam_features.pkl",
+      "vectorizer_path": "./data/tfidf_vectorizer.pkl"
+    },
+    "processing_already_applied": [
+      "remove_duplicates",
+      "handle_class_imbalance",
+      "text_preprocessing",
+      "feature_extraction"
+    ],
     "format": "output only a code block; report any file and directory structure change caused by your output code; replay similarly to the format of JSON to specify dataset path after change"
   }
 }
@@ -363,6 +378,7 @@ train_test_split_path = './data/train_test_split.pkl'
 with open(train_test_split_path, 'wb') as f:
     pickle.dump((X_train, X_test, y_train, y_test), f)
 ```
+
 ```json
 {
   "train_test_split_path": "./data/train_test_split.pkl"
@@ -378,17 +394,23 @@ with open(train_test_split_path, 'wb') as f:
       "label_encoding": "Encode the 'Category' column (ham/spam) into numerical labels for model training."
     },
     "task_requirements": "Write me practical code to implement the operation.",
-    "dataset_path":{
- "train_test_split_path": "./data/train_test_split.pkl"
-},
-    "processing_already_applied": ["remove_duplicates","handle_class_imbalance"，"text_preprocessing","feature_extraction","train_test_split"],
+    "dataset_path": {
+      "train_test_split_path": "./data/train_test_split.pkl"
+    },
+    "processing_already_applied": [
+      "remove_duplicates",
+      "handle_class_imbalance",
+      "text_preprocessing",
+      "feature_extraction",
+      "train_test_split"
+    ],
     "format": "output only a code block; report any file and directory structure change caused by your output code; replay similarly to the format of JSON to specify dataset path after change"
   }
 }
-
 ```
 
 ### answer 7
+
 ```python
 import pickle
 from sklearn.preprocessing import LabelEncoder
@@ -422,4 +444,3 @@ with open(label_encoder_path, 'wb') as f:
   "label_encoder_path": "./data/label_encoder.pkl"
 }
 ```
-

@@ -23,4 +23,4 @@ Next step:
 -> implement code to automate this whole manual process (implement data engineering section)
 -> explore model design and training following similar process
 
-Should be way faster when th direction is clear.
+Should be way faster when the direction is clear.
