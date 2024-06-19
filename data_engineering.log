@@ -13,3 +13,754 @@ INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1
 INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
 INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
 INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ERROR:root:Error: invalid syntax (<unknown>, line 2)
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ERROR:root:Error: invalid syntax (<unknown>, line 2)
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ERROR:root:Error: invalid syntax (<unknown>, line 2)
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ERROR:root:Error: invalid syntax (<unknown>, line 2)
+INFO:root:Data engineering process completed.
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ERROR:root:Error: invalid syntax (<unknown>, line 2)
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ERROR:root:Error: invalid syntax (<unknown>, line 2)
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ERROR:root:Error: invalid syntax (<unknown>, line 2)
+INFO:root:Data engineering process completed.
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ERROR:root:Error: invalid syntax (<unknown>, line 2)
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ERROR:root:Error: invalid syntax (<unknown>, line 2)
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ERROR:root:Error: invalid syntax (<unknown>, line 2)
+INFO:root:Data engineering process completed.
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ERROR:root:Traceback (most recent call last):
+  File "/Users/hann/Projects/MCUrelated/MLOps_by_LLM_from_scratch/dataeng_agent.py", line 108, in execute_code
+    ast.literal_eval(code)
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/ast.py", line 64, in literal_eval
+    node_or_string = parse(node_or_string.lstrip(" \t"), mode='eval')
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/ast.py", line 50, in parse
+    return compile(source, filename, mode, flags,
+  File "<unknown>", line 2
+    import pandas as pd
+    ^^^^^^
+SyntaxError: invalid syntax
+
+invalid syntax (<unknown>, line 2)
+ERROR:root:Error: Traceback (most recent call last):
+  File "/Users/hann/Projects/MCUrelated/MLOps_by_LLM_from_scratch/dataeng_agent.py", line 108, in execute_code
+    ast.literal_eval(code)
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/ast.py", line 64, in literal_eval
+    node_or_string = parse(node_or_string.lstrip(" \t"), mode='eval')
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/ast.py", line 50, in parse
+    return compile(source, filename, mode, flags,
+  File "<unknown>", line 2
+    import pandas as pd
+    ^^^^^^
+SyntaxError: invalid syntax
+
+invalid syntax (<unknown>, line 2)
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ERROR:root:Traceback (most recent call last):
+  File "/Users/hann/Projects/MCUrelated/MLOps_by_LLM_from_scratch/dataeng_agent.py", line 108, in execute_code
+    ast.literal_eval(code)
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/ast.py", line 64, in literal_eval
+    node_or_string = parse(node_or_string.lstrip(" \t"), mode='eval')
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/ast.py", line 50, in parse
+    return compile(source, filename, mode, flags,
+  File "<unknown>", line 2
+    import pandas as pd
+    ^^^^^^
+SyntaxError: invalid syntax
+
+invalid syntax (<unknown>, line 2)
+ERROR:root:Error: Traceback (most recent call last):
+  File "/Users/hann/Projects/MCUrelated/MLOps_by_LLM_from_scratch/dataeng_agent.py", line 108, in execute_code
+    ast.literal_eval(code)
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/ast.py", line 64, in literal_eval
+    node_or_string = parse(node_or_string.lstrip(" \t"), mode='eval')
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/ast.py", line 50, in parse
+    return compile(source, filename, mode, flags,
+  File "<unknown>", line 2
+    import pandas as pd
+    ^^^^^^
+SyntaxError: invalid syntax
+
+invalid syntax (<unknown>, line 2)
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ERROR:root:Traceback (most recent call last):
+  File "/Users/hann/Projects/MCUrelated/MLOps_by_LLM_from_scratch/dataeng_agent.py", line 108, in execute_code
+    ast.literal_eval(code)
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/ast.py", line 64, in literal_eval
+    node_or_string = parse(node_or_string.lstrip(" \t"), mode='eval')
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/ast.py", line 50, in parse
+    return compile(source, filename, mode, flags,
+  File "<unknown>", line 2
+    import pandas as pd
+    ^^^^^^
+SyntaxError: invalid syntax
+
+invalid syntax (<unknown>, line 2)
+ERROR:root:Error: Traceback (most recent call last):
+  File "/Users/hann/Projects/MCUrelated/MLOps_by_LLM_from_scratch/dataeng_agent.py", line 108, in execute_code
+    ast.literal_eval(code)
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/ast.py", line 64, in literal_eval
+    node_or_string = parse(node_or_string.lstrip(" \t"), mode='eval')
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/ast.py", line 50, in parse
+    return compile(source, filename, mode, flags,
+  File "<unknown>", line 2
+    import pandas as pd
+    ^^^^^^
+SyntaxError: invalid syntax
+
+invalid syntax (<unknown>, line 2)
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ERROR:root:Traceback (most recent call last):
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 3489, in <module>
+    main()
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 3482, in main
+    globals = debugger.run(setup['file'], None, None, is_module)
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 2510, in run
+    return self._exec(is_module, entry_point_fn, module_name, file, globals, locals)
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 2517, in _exec
+    globals = pydevd_runpy.run_path(file, globals, '__main__')
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 321, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 135, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 124, in _run_code
+    exec(code, run_globals)
+  File "./tmp/tmp1.py", line 9, in <module>
+    df_unique = df.drop_duplicates(subset='message')
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/pandas/core/frame.py", line 6818, in drop_duplicates
+    result = self[-self.duplicated(subset, keep=keep)]
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/pandas/core/frame.py", line 6950, in duplicated
+    raise KeyError(Index(diff))
+KeyError: Index(['message'], dtype='object')
+
+ERROR:root:Error: Traceback (most recent call last):
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 3489, in <module>
+    main()
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 3482, in main
+    globals = debugger.run(setup['file'], None, None, is_module)
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 2510, in run
+    return self._exec(is_module, entry_point_fn, module_name, file, globals, locals)
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 2517, in _exec
+    globals = pydevd_runpy.run_path(file, globals, '__main__')
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 321, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 135, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 124, in _run_code
+    exec(code, run_globals)
+  File "./tmp/tmp1.py", line 9, in <module>
+    df_unique = df.drop_duplicates(subset='message')
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/pandas/core/frame.py", line 6818, in drop_duplicates
+    result = self[-self.duplicated(subset, keep=keep)]
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/pandas/core/frame.py", line 6950, in duplicated
+    raise KeyError(Index(diff))
+KeyError: Index(['message'], dtype='object')
+
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ERROR:root:Traceback (most recent call last):
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 3489, in <module>
+    main()
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 3482, in main
+    globals = debugger.run(setup['file'], None, None, is_module)
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 2510, in run
+    return self._exec(is_module, entry_point_fn, module_name, file, globals, locals)
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 2517, in _exec
+    globals = pydevd_runpy.run_path(file, globals, '__main__')
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 321, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 135, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 124, in _run_code
+    exec(code, run_globals)
+  File "./tmp/tmp1.py", line 9, in <module>
+    df.drop_duplicates(subset='message', keep='first', inplace=True)
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/pandas/core/frame.py", line 6818, in drop_duplicates
+    result = self[-self.duplicated(subset, keep=keep)]
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/pandas/core/frame.py", line 6950, in duplicated
+    raise KeyError(Index(diff))
+KeyError: Index(['message'], dtype='object')
+
+ERROR:root:Error: Traceback (most recent call last):
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 3489, in <module>
+    main()
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 3482, in main
+    globals = debugger.run(setup['file'], None, None, is_module)
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 2510, in run
+    return self._exec(is_module, entry_point_fn, module_name, file, globals, locals)
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 2517, in _exec
+    globals = pydevd_runpy.run_path(file, globals, '__main__')
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 321, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 135, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 124, in _run_code
+    exec(code, run_globals)
+  File "./tmp/tmp1.py", line 9, in <module>
+    df.drop_duplicates(subset='message', keep='first', inplace=True)
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/pandas/core/frame.py", line 6818, in drop_duplicates
+    result = self[-self.duplicated(subset, keep=keep)]
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/pandas/core/frame.py", line 6950, in duplicated
+    raise KeyError(Index(diff))
+KeyError: Index(['message'], dtype='object')
+
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ERROR:root:Traceback (most recent call last):
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 3489, in <module>
+    main()
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 3482, in main
+    globals = debugger.run(setup['file'], None, None, is_module)
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 2510, in run
+    return self._exec(is_module, entry_point_fn, module_name, file, globals, locals)
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 2517, in _exec
+    globals = pydevd_runpy.run_path(file, globals, '__main__')
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 321, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 135, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 124, in _run_code
+    exec(code, run_globals)
+  File "./tmp/tmp1.py", line 3, in <module>
+    from nltk.corpus import stopwords
+ModuleNotFoundError: No module named 'nltk'
+
+ERROR:root:Error: Traceback (most recent call last):
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 3489, in <module>
+    main()
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 3482, in main
+    globals = debugger.run(setup['file'], None, None, is_module)
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 2510, in run
+    return self._exec(is_module, entry_point_fn, module_name, file, globals, locals)
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 2517, in _exec
+    globals = pydevd_runpy.run_path(file, globals, '__main__')
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 321, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 135, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 124, in _run_code
+    exec(code, run_globals)
+  File "./tmp/tmp1.py", line 3, in <module>
+    from nltk.corpus import stopwords
+ModuleNotFoundError: No module named 'nltk'
+
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ERROR:root:Traceback (most recent call last):
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 3489, in <module>
+    main()
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 3482, in main
+    globals = debugger.run(setup['file'], None, None, is_module)
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 2510, in run
+    return self._exec(is_module, entry_point_fn, module_name, file, globals, locals)
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 2517, in _exec
+    globals = pydevd_runpy.run_path(file, globals, '__main__')
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 321, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 135, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 124, in _run_code
+    exec(code, run_globals)
+  File "./tmp/tmp1.py", line 30, in <module>
+    df['Message'] = df['Message'].apply(remove_stopwords)
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/pandas/core/series.py", line 4924, in apply
+    ).apply()
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/pandas/core/apply.py", line 1427, in apply
+    return self.apply_standard()
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/pandas/core/apply.py", line 1507, in apply_standard
+    mapped = obj._map_values(
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/pandas/core/base.py", line 921, in _map_values
+    return algorithms.map_array(arr, mapper, na_action=na_action, convert=convert)
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/pandas/core/algorithms.py", line 1743, in map_array
+    return lib.map_infer(values, mapper, convert=convert)
+  File "lib.pyx", line 2972, in pandas._libs.lib.map_infer
+  File "./tmp/tmp1.py", line 25, in remove_stopwords
+    words = message.split()
+AttributeError: 'float' object has no attribute 'split'
+
+ERROR:root:Error: Traceback (most recent call last):
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 3489, in <module>
+    main()
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 3482, in main
+    globals = debugger.run(setup['file'], None, None, is_module)
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 2510, in run
+    return self._exec(is_module, entry_point_fn, module_name, file, globals, locals)
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 2517, in _exec
+    globals = pydevd_runpy.run_path(file, globals, '__main__')
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 321, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 135, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 124, in _run_code
+    exec(code, run_globals)
+  File "./tmp/tmp1.py", line 30, in <module>
+    df['Message'] = df['Message'].apply(remove_stopwords)
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/pandas/core/series.py", line 4924, in apply
+    ).apply()
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/pandas/core/apply.py", line 1427, in apply
+    return self.apply_standard()
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/pandas/core/apply.py", line 1507, in apply_standard
+    mapped = obj._map_values(
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/pandas/core/base.py", line 921, in _map_values
+    return algorithms.map_array(arr, mapper, na_action=na_action, convert=convert)
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/pandas/core/algorithms.py", line 1743, in map_array
+    return lib.map_infer(values, mapper, convert=convert)
+  File "lib.pyx", line 2972, in pandas._libs.lib.map_infer
+  File "./tmp/tmp1.py", line 25, in remove_stopwords
+    words = message.split()
+AttributeError: 'float' object has no attribute 'split'
+
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ERROR:root:Traceback (most recent call last):
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 3489, in <module>
+    main()
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 3482, in main
+    globals = debugger.run(setup['file'], None, None, is_module)
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 2510, in run
+    return self._exec(is_module, entry_point_fn, module_name, file, globals, locals)
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 2517, in _exec
+    globals = pydevd_runpy.run_path(file, globals, '__main__')
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 321, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 135, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 124, in _run_code
+    exec(code, run_globals)
+  File "./tmp/tmp1.py", line 3, in <module>
+    from sklearn.preprocessing import LabelEncoder
+ModuleNotFoundError: No module named 'sklearn'
+
+ERROR:root:Error: Traceback (most recent call last):
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 3489, in <module>
+    main()
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 3482, in main
+    globals = debugger.run(setup['file'], None, None, is_module)
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 2510, in run
+    return self._exec(is_module, entry_point_fn, module_name, file, globals, locals)
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 2517, in _exec
+    globals = pydevd_runpy.run_path(file, globals, '__main__')
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 321, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 135, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 124, in _run_code
+    exec(code, run_globals)
+  File "./tmp/tmp1.py", line 3, in <module>
+    from sklearn.preprocessing import LabelEncoder
+ModuleNotFoundError: No module named 'sklearn'
+
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ERROR:root:[nltk_data] Downloading package punkt to /Users/hann/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Traceback (most recent call last):
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 3489, in <module>
+    main()
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 3482, in main
+    globals = debugger.run(setup['file'], None, None, is_module)
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 2510, in run
+    return self._exec(is_module, entry_point_fn, module_name, file, globals, locals)
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 2517, in _exec
+    globals = pydevd_runpy.run_path(file, globals, '__main__')
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 321, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 135, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 124, in _run_code
+    exec(code, run_globals)
+  File "./tmp/tmp1.py", line 14, in <module>
+    df['Message_Tokens'] = df['Message'].apply(word_tokenize)
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/pandas/core/series.py", line 4924, in apply
+    ).apply()
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/pandas/core/apply.py", line 1427, in apply
+    return self.apply_standard()
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/pandas/core/apply.py", line 1507, in apply_standard
+    mapped = obj._map_values(
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/pandas/core/base.py", line 921, in _map_values
+    return algorithms.map_array(arr, mapper, na_action=na_action, convert=convert)
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/pandas/core/algorithms.py", line 1743, in map_array
+    return lib.map_infer(values, mapper, convert=convert)
+  File "lib.pyx", line 2972, in pandas._libs.lib.map_infer
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/nltk/tokenize/__init__.py", line 129, in word_tokenize
+    sentences = [text] if preserve_line else sent_tokenize(text, language)
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/nltk/tokenize/__init__.py", line 107, in sent_tokenize
+    return tokenizer.tokenize(text)
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/nltk/tokenize/punkt.py", line 1281, in tokenize
+    return list(self.sentences_from_text(text, realign_boundaries))
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/nltk/tokenize/punkt.py", line 1341, in sentences_from_text
+    return [text[s:e] for s, e in self.span_tokenize(text, realign_boundaries)]
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/nltk/tokenize/punkt.py", line 1341, in <listcomp>
+    return [text[s:e] for s, e in self.span_tokenize(text, realign_boundaries)]
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/nltk/tokenize/punkt.py", line 1329, in span_tokenize
+    for sentence in slices:
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/nltk/tokenize/punkt.py", line 1459, in _realign_boundaries
+    for sentence1, sentence2 in _pair_iter(slices):
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/nltk/tokenize/punkt.py", line 321, in _pair_iter
+    prev = next(iterator)
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/nltk/tokenize/punkt.py", line 1431, in _slices_from_text
+    for match, context in self._match_potential_end_contexts(text):
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/nltk/tokenize/punkt.py", line 1395, in _match_potential_end_contexts
+    for match in self._lang_vars.period_context_re().finditer(text):
+TypeError: expected string or bytes-like object
+
+ERROR:root:Error: [nltk_data] Downloading package punkt to /Users/hann/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+Traceback (most recent call last):
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 3489, in <module>
+    main()
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 3482, in main
+    globals = debugger.run(setup['file'], None, None, is_module)
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 2510, in run
+    return self._exec(is_module, entry_point_fn, module_name, file, globals, locals)
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 2517, in _exec
+    globals = pydevd_runpy.run_path(file, globals, '__main__')
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 321, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 135, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 124, in _run_code
+    exec(code, run_globals)
+  File "./tmp/tmp1.py", line 14, in <module>
+    df['Message_Tokens'] = df['Message'].apply(word_tokenize)
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/pandas/core/series.py", line 4924, in apply
+    ).apply()
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/pandas/core/apply.py", line 1427, in apply
+    return self.apply_standard()
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/pandas/core/apply.py", line 1507, in apply_standard
+    mapped = obj._map_values(
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/pandas/core/base.py", line 921, in _map_values
+    return algorithms.map_array(arr, mapper, na_action=na_action, convert=convert)
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/pandas/core/algorithms.py", line 1743, in map_array
+    return lib.map_infer(values, mapper, convert=convert)
+  File "lib.pyx", line 2972, in pandas._libs.lib.map_infer
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/nltk/tokenize/__init__.py", line 129, in word_tokenize
+    sentences = [text] if preserve_line else sent_tokenize(text, language)
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/nltk/tokenize/__init__.py", line 107, in sent_tokenize
+    return tokenizer.tokenize(text)
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/nltk/tokenize/punkt.py", line 1281, in tokenize
+    return list(self.sentences_from_text(text, realign_boundaries))
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/nltk/tokenize/punkt.py", line 1341, in sentences_from_text
+    return [text[s:e] for s, e in self.span_tokenize(text, realign_boundaries)]
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/nltk/tokenize/punkt.py", line 1341, in <listcomp>
+    return [text[s:e] for s, e in self.span_tokenize(text, realign_boundaries)]
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/nltk/tokenize/punkt.py", line 1329, in span_tokenize
+    for sentence in slices:
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/nltk/tokenize/punkt.py", line 1459, in _realign_boundaries
+    for sentence1, sentence2 in _pair_iter(slices):
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/nltk/tokenize/punkt.py", line 321, in _pair_iter
+    prev = next(iterator)
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/nltk/tokenize/punkt.py", line 1431, in _slices_from_text
+    for match, context in self._match_potential_end_contexts(text):
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/nltk/tokenize/punkt.py", line 1395, in _match_potential_end_contexts
+    for match in self._lang_vars.period_context_re().finditer(text):
+TypeError: expected string or bytes-like object
+
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ERROR:root:Traceback (most recent call last):
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 3489, in <module>
+    main()
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 3482, in main
+    globals = debugger.run(setup['file'], None, None, is_module)
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 2510, in run
+    return self._exec(is_module, entry_point_fn, module_name, file, globals, locals)
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 2517, in _exec
+    globals = pydevd_runpy.run_path(file, globals, '__main__')
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 321, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 135, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 124, in _run_code
+    exec(code, run_globals)
+  File "./tmp/tmp1.py", line 14, in <module>
+    df['Message'] = df['Message'].apply(remove_stopwords)
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/pandas/core/series.py", line 4924, in apply
+    ).apply()
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/pandas/core/apply.py", line 1427, in apply
+    return self.apply_standard()
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/pandas/core/apply.py", line 1507, in apply_standard
+    mapped = obj._map_values(
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/pandas/core/base.py", line 921, in _map_values
+    return algorithms.map_array(arr, mapper, na_action=na_action, convert=convert)
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/pandas/core/algorithms.py", line 1743, in map_array
+    return lib.map_infer(values, mapper, convert=convert)
+  File "lib.pyx", line 2972, in pandas._libs.lib.map_infer
+  File "./tmp/tmp1.py", line 11, in remove_stopwords
+    return [word for word in tokenized_text if word not in ENGLISH_STOP_WORDS]
+TypeError: 'float' object is not iterable
+
+ERROR:root:Error: Traceback (most recent call last):
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 3489, in <module>
+    main()
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 3482, in main
+    globals = debugger.run(setup['file'], None, None, is_module)
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 2510, in run
+    return self._exec(is_module, entry_point_fn, module_name, file, globals, locals)
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 2517, in _exec
+    globals = pydevd_runpy.run_path(file, globals, '__main__')
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 321, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 135, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 124, in _run_code
+    exec(code, run_globals)
+  File "./tmp/tmp1.py", line 14, in <module>
+    df['Message'] = df['Message'].apply(remove_stopwords)
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/pandas/core/series.py", line 4924, in apply
+    ).apply()
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/pandas/core/apply.py", line 1427, in apply
+    return self.apply_standard()
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/pandas/core/apply.py", line 1507, in apply_standard
+    mapped = obj._map_values(
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/pandas/core/base.py", line 921, in _map_values
+    return algorithms.map_array(arr, mapper, na_action=na_action, convert=convert)
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/pandas/core/algorithms.py", line 1743, in map_array
+    return lib.map_infer(values, mapper, convert=convert)
+  File "lib.pyx", line 2972, in pandas._libs.lib.map_infer
+  File "./tmp/tmp1.py", line 11, in remove_stopwords
+    return [word for word in tokenized_text if word not in ENGLISH_STOP_WORDS]
+TypeError: 'float' object is not iterable
+
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ERROR:root:Traceback (most recent call last):
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 3489, in <module>
+    main()
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 3482, in main
+    globals = debugger.run(setup['file'], None, None, is_module)
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 2510, in run
+    return self._exec(is_module, entry_point_fn, module_name, file, globals, locals)
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 2517, in _exec
+    globals = pydevd_runpy.run_path(file, globals, '__main__')
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 321, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 135, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 124, in _run_code
+    exec(code, run_globals)
+  File "./tmp/tmp1.py", line 16, in <module>
+    df['Message'] = df['Message'].apply(remove_stopwords)
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/pandas/core/series.py", line 4924, in apply
+    ).apply()
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/pandas/core/apply.py", line 1427, in apply
+    return self.apply_standard()
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/pandas/core/apply.py", line 1507, in apply_standard
+    mapped = obj._map_values(
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/pandas/core/base.py", line 921, in _map_values
+    return algorithms.map_array(arr, mapper, na_action=na_action, convert=convert)
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/pandas/core/algorithms.py", line 1743, in map_array
+    return lib.map_infer(values, mapper, convert=convert)
+  File "lib.pyx", line 2972, in pandas._libs.lib.map_infer
+  File "./tmp/tmp1.py", line 13, in remove_stopwords
+    return [word for word in tokenized_text if word not in ENGLISH_STOP_WORDS]
+TypeError: 'float' object is not iterable
+
+ERROR:root:Error: Traceback (most recent call last):
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 3489, in <module>
+    main()
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 3482, in main
+    globals = debugger.run(setup['file'], None, None, is_module)
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 2510, in run
+    return self._exec(is_module, entry_point_fn, module_name, file, globals, locals)
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 2517, in _exec
+    globals = pydevd_runpy.run_path(file, globals, '__main__')
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 321, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 135, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 124, in _run_code
+    exec(code, run_globals)
+  File "./tmp/tmp1.py", line 16, in <module>
+    df['Message'] = df['Message'].apply(remove_stopwords)
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/pandas/core/series.py", line 4924, in apply
+    ).apply()
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/pandas/core/apply.py", line 1427, in apply
+    return self.apply_standard()
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/pandas/core/apply.py", line 1507, in apply_standard
+    mapped = obj._map_values(
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/pandas/core/base.py", line 921, in _map_values
+    return algorithms.map_array(arr, mapper, na_action=na_action, convert=convert)
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/pandas/core/algorithms.py", line 1743, in map_array
+    return lib.map_infer(values, mapper, convert=convert)
+  File "lib.pyx", line 2972, in pandas._libs.lib.map_infer
+  File "./tmp/tmp1.py", line 13, in remove_stopwords
+    return [word for word in tokenized_text if word not in ENGLISH_STOP_WORDS]
+TypeError: 'float' object is not iterable
+
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ERROR:root:Traceback (most recent call last):
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'text_column'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/hann/Projects/MCUrelated/MLOps_by_LLM_from_scratch/./tmp/tmp1.py", line 10, in <module>
+    tfidf_matrix = tfidf_vectorizer.fit_transform(df['text_column'])  # Assume the text is in a column named 'text_column'
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/pandas/core/frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'text_column'
+
+ERROR:root:Error: Traceback (most recent call last):
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'text_column'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/hann/Projects/MCUrelated/MLOps_by_LLM_from_scratch/./tmp/tmp1.py", line 10, in <module>
+    tfidf_matrix = tfidf_vectorizer.fit_transform(df['text_column'])  # Assume the text is in a column named 'text_column'
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/pandas/core/frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'text_column'
+
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ERROR:root:Traceback (most recent call last):
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'message'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/hann/Projects/MCUrelated/MLOps_by_LLM_from_scratch/./tmp/tmp1.py", line 13, in <module>
+    tfidf_matrix = tfidf_vectorizer.fit_transform(df['message'])
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/pandas/core/frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'message'
+
+ERROR:root:Error: Traceback (most recent call last):
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'message'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/hann/Projects/MCUrelated/MLOps_by_LLM_from_scratch/./tmp/tmp1.py", line 13, in <module>
+    tfidf_matrix = tfidf_vectorizer.fit_transform(df['message'])
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/pandas/core/frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/Users/hann/anaconda3/envs/datasci/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'message'
+
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+ERROR:root:Traceback (most recent call last):
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 3489, in <module>
+    main()
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 3482, in main
+    globals = debugger.run(setup['file'], None, None, is_module)
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 2510, in run
+    return self._exec(is_module, entry_point_fn, module_name, file, globals, locals)
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 2517, in _exec
+    globals = pydevd_runpy.run_path(file, globals, '__main__')
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 321, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 135, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 124, in _run_code
+    exec(code, run_globals)
+  File "./tmp/tmp1.py", line 16, in <module>
+    onehot_encoder = OneHotEncoder(sparse=False)
+TypeError: OneHotEncoder.__init__() got an unexpected keyword argument 'sparse'
+
+ERROR:root:Error: Traceback (most recent call last):
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 3489, in <module>
+    main()
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 3482, in main
+    globals = debugger.run(setup['file'], None, None, is_module)
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 2510, in run
+    return self._exec(is_module, entry_point_fn, module_name, file, globals, locals)
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/pydevd.py", line 2517, in _exec
+    globals = pydevd_runpy.run_path(file, globals, '__main__')
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 321, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 135, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/Users/hann/.vscode/extensions/ms-python.debugpy-2024.6.0-darwin-arm64/bundled/libs/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 124, in _run_code
+    exec(code, run_globals)
+  File "./tmp/tmp1.py", line 16, in <module>
+    onehot_encoder = OneHotEncoder(sparse=False)
+TypeError: OneHotEncoder.__init__() got an unexpected keyword argument 'sparse'
+
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:Data engineering process completed.
