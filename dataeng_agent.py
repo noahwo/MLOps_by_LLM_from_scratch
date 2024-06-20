@@ -32,7 +32,7 @@ os.environ["LANGCHAIN_ENDPOINT"] = "https://api.smith.langchain.com"
 os.environ["LANGCHAIN_PROJECT"] = "default"
 
 # Set up logging
-logging.basicConfig(filename="data_engineering.log", level=logging.INFO)
+logging.basicConfig(level=logging.WARNING)
 
 
 """Prompt definitions"""
@@ -47,8 +47,20 @@ user_prompt_2 = PromptTemplate.from_template(local_templates.user_prompt_templat
 dataset_summary_prompt = PromptTemplate.from_template(
     local_templates.dataset_summary_prompt_template
 )
-
+chat_history = """ """
 # %%
+
+
+def update_chat_history(prompt, response_raw):
+    """Synthesize a chat history item from the prompt and response."""
+    global chat_history
+    chat_history = (
+        """\n\n# Most recent round of conversation: # \n"""
+        + "["
+        + f"HumanMessage({str(prompt)}),"
+        + f"AIMessage({str(response_raw.content)})"
+        + "],\n"
+    )
 
 
 # %%
@@ -96,6 +108,7 @@ def generate_suggestion_table(
     )
 
     returnable = llm.invoke(prompt)
+    update_chat_history(prompt, returnable)
     return json.loads(returnable.content)
 
 
@@ -126,32 +139,23 @@ def execute_code(code):
         else:
 
             # Handle the error
-            print("An error occurred during script execution.")
-            logging.error(result.stderr)
+            # logging.error("An error occurred during script execution:")
+            # logging.error(result.stderr)
 
             return result.stderr
 
     finally:
         # Ensure the script file is deleted regardless of success or failure
         os.remove(tmp_file)
-    # try:
-    #     print(type(code))
-    #     print(code)
-    # ast.literal_eval(code)
-    #     return None
-    # except Exception as e:
-    #     err_msg = traceback.format_exc() + "\n" + str(e)
-    #     logging.error(err_msg)
-    #     return err_msg
 
 
 # Create a function to prompt the LLM for code snippets
-def prompt_llm(user_prompt):
-    """Instantiate the ChatOpenAI class and prompt the LLM for code snippets each time."""
-    llm = ChatOpenAI(api_key=OPENAI_API_KEY, model_name=OPENAI_MODEL_NAME)
+# def prompt_llm(user_prompt):
+#     """Instantiate the ChatOpenAI class and prompt the LLM for code snippets each time."""
+#     llm = ChatOpenAI(api_key=OPENAI_API_KEY, model_name=OPENAI_MODEL_NAME)
 
-    response = llm.invoke(user_prompt)
-    return response.content
+#     response = llm.invoke(user_prompt)
+#     return response.content
 
 
 # Create a function to handle retries
@@ -168,10 +172,13 @@ def retry_code_execution(
             )
         error = execute_code(code)
         if not error:
-            return None
+            return [None, llm]
         logging.error(f"Error: {error}")
+        logging.info(f"Trying to solve the error... Attempt {i + 1}...")
         user_prompt = user_prompt_2.format(executed_code=code, error_info=error)
-        response = llm.invoke(user_prompt).content
+        response_raw = llm.invoke(str(user_prompt + chat_history))
+        response = response_raw.content
+        update_chat_history(user_prompt, response_raw)
         code = response.split("```python")[1].split("```")[0]
 
     return [error, llm]
@@ -185,8 +192,8 @@ def retry_code_execution(
 def main():
     # purpose, dataset_path = get_user_input()
     purpose = "detect spam emails"
-    dataset_path = "./data/smartphone.csv"
-    dataset_intro = "This dataset was collected from the Smartphone sensors and can be used to analyse behaviour of a crowd, for example, an anomaly."
+    dataset_path = "./data/spam.csv"
+    dataset_intro = """This dataset contains a collection of emails, categorized into two classes: "Spam" and "Non-Spam" (often referred to as "Ham"). These emails have been carefully curated and labeled to aid in the development of spam email detection models. Whether you are interested in email filtering, natural language processing, or machine learning, this dataset can serve as a valuable resource for training and evaluation."""
     suggestion_table = generate_suggestion_table(purpose, dataset_path, dataset_intro)
 
     # %%
@@ -200,15 +207,15 @@ def main():
             dataset_path=dataset_path,
             list_processing_already_applied=str(processing_already_applied),
         )
-        response = llm.invoke(user_prompt).content
-
+        response_raw = llm.invoke(user_prompt + chat_history)
+        response = response_raw.content
+        update_chat_history(user_prompt, response_raw)
         code_snippet = response.split("```python")[1].split("```")[0]
         returned_list = retry_code_execution(code_snippet, 2, llm)
-        if type(returned_list) is List:
+        llm = returned_list[1]
+        if returned_list[0] is not None:
             error = returned_list[0]
-            llm = returned_list[1]
-            logging.error(f"Error: {error}")
-            break
+            sys.exit(f"Exiting due to failed 2 tries to solve the error: \n{error}")
 
         processing_already_applied.append(operation_n)
         dataset_path = json.loads(

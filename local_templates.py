@@ -23,7 +23,7 @@ user_prompt_template_1 = """
     "task_requirements": "Write me practical code to implement the operation.",
     "dataset_path": {dataset_path},
     "processing_already_applied": {list_processing_already_applied},
-    "format": "output only two code blocks; code in the first block; in the second code block, report any file and directory structure change caused by your output code; replay similarly to the format of JSON to specify dataset path after change",
+    "format": "output only two code blocks; code in the first block; in the second code block, report any file and directory structure change caused by your output code; replay similarly to the format of JSON to specify dataset path after change. Do not assume things, the code should be clear, accurate and executable, skip any code you are unsure about the detail.",
   }}
 }}
 """
@@ -32,7 +32,7 @@ user_prompt_template_2 = """{{
     "executed_code": "{executed_code}",
     "caused_error": "{error_info}",
     "task": "Regenerate the last task to avoid this error.",
-    "format": "output only two code blocks; code in the first block; in the second code block, report any file and directory structure change caused by your output code; replay similarly to the format of JSON to specify dataset path after change",
+    "format": "output only two code blocks; code in the first block; in the second code block, report any file and directory structure change caused by your output code; replay similarly to the format of JSON to specify dataset path after change. Do not assume things, the code should be clear, accurate and executable, skip any code you are unsure about the detail.",
 }}"""
 
 
